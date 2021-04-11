@@ -281,27 +281,34 @@
         flex-direction: row;
         min-height: 100vh;
         align-items: center;
+        width: 100%;
       }
 
       .left-container {
+        flex: 1;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        margin-right: 20px;
       }
 
       .left-top {
+        display: flex;
+        flex-direction: row;
+      }
+      .ln-container {
       }
 
       .left-bottom {
       }
 
       .middle-container {
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        background-image: url("https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg");
+        flex: 1;
+        margin: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        background-image: url("./IMG_20210408_125540__01.jpg");
       }
 
       .right-container {
@@ -332,6 +339,53 @@
 
       .ln-item > p {
         margin: 0;
+      }
+
+      @keyframes slidy {
+        0% {
+          left: 0%;
+        }
+        20% {
+          left: 0%;
+        }
+        25% {
+          left: -100%;
+        }
+        45% {
+          left: -100%;
+        }
+        50% {
+          left: -200%;
+        }
+        70% {
+          left: -200%;
+        }
+        75% {
+          left: -300%;
+        }
+        95% {
+          left: -300%;
+        }
+        100% {
+          left: -400%;
+        }
+      }
+
+      div#slider {
+        overflow: hidden;
+      }
+      div#slider figure img {
+        width: 20%;
+        float: left;
+      }
+      div#slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
       }
     </style>
 
@@ -367,133 +421,157 @@
     <div class="page">
       <div class="left-container">
         <div class="left-top">
-          <h2>My LinkedIn activity</h2>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/posts/praveenkh_financialliteracy-activity-6784826472088653824-EDO-"
-          >
-            <div class="ln-item">
-              <p>First post</p>
-            </div>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/posts/praveenkh_im-happy-to-share-with-you-all-that-i-helped-activity-6777254078343983106-mcMv"
-          >
-            <div class="ln-item">
-              <p>First post</p>
-            </div>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/posts/praveenkh_bugbounty-bugs-google-activity-6780162390341382144-Q0k0"
-          >
-            <div class="ln-item">
-              <p>First post</p>
-            </div>
-          </a>
+          <div class="ln-container">
+            <h2>My LinkedIn activity</h2>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/posts/praveenkh_financialliteracy-activity-6784826472088653824-EDO-"
+            >
+              <div class="ln-item">
+                <p>First post</p>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/posts/praveenkh_im-happy-to-share-with-you-all-that-i-helped-activity-6777254078343983106-mcMv"
+            >
+              <div class="ln-item">
+                <p>First post</p>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/posts/praveenkh_bugbounty-bugs-google-activity-6780162390341382144-Q0k0"
+            >
+              <div class="ln-item">
+                <p>First post</p>
+              </div>
+            </a>
+          </div>
+          <div class="middle-container">
+            <h1>Praveen K H</h1>
+            <h2 style="font-family: cursive;">Chase Dreams Money Follows</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/Praveenkh8493"
+                  rel="noopener"
+                  target="_blank"
+                  title="Explore Praveen's Code on GitHub"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/praveenkh/"
+                  rel="noopener"
+                  target="_blank"
+                  title="View Praveen's Profile on Linkedin"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://medium.com/@praveenkh48"
+                  rel="noopener"
+                  target="_blank"
+                  title="Read Praveen's publications on Medium"
+                  ><i class="fa fa-medium"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.twitter.com/PRAVEENKH8493"
+                  rel="noopener"
+                  target="_blank"
+                  title="Follow Praveen on Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/praveenkh8493"
+                  rel="noopener"
+                  target="_blank"
+                  title="Follow Praveen on Instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/Praveenkh88888888"
+                  rel="noopener"
+                  target="_blank"
+                  title=" Be a friend to Praveen on fb"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.reddit.com"
+                  rel="noopener"
+                  target="_blank"
+                  title="View Praveen's Posts on Reddit"
+                  ><i class="fa fa-reddit"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://stackoverflow.com/users/7809117/praveen-k-h"
+                  rel="noopener"
+                  target="_blank"
+                  title="View Praveen's Stack Overflow Profile"
+                  ><i class="fa fa-stack-overflow"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCp79npQ3fl7_vQFz3PJHluA/"
+                  rel="noopener"
+                  target="_blank"
+                  title="Subscribe to Praveen's Channel on YouTube"
+                  ><i class="fa fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1IXgHvTE3s1ZGoAnznX7D7CN8wBZttfQH/view?usp=sharing"
+                  rel="noopener"
+                  target="_blank"
+                  title="Praveen's Resume"
+                  ><i class="fa fa-file-text-o"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="left-bottom">
-          <h2>left bottom</h2>
+          <div id="slider">
+            <figure>
+              <img
+                src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"
+                alt
+              />
+              <img
+                src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"
+                alt
+              />
+              <img
+                src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"
+                alt
+              />
+              <img
+                src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"
+                alt
+              />
+              <img
+                src="https://images.ctfassets.net/hrltx12pl8hq/7yQR5uJhwEkRfjwMFJ7bUK/dc52a0913e8ff8b5c276177890eb0129/offset_comp_772626-opt.jpg?fit=fill&w=800&h=300"
+                alt
+              />
+            </figure>
+          </div>
         </div>
-      </div>
-
-      <div class="middle-container">
-        <h1>Praveen K H</h1>
-        <h2 style="font-family: cursive;">Chase Dreams Money Follows</h2>
-        <ul>
-          <li>
-            <a
-              href="https://github.com/Praveenkh8493"
-              rel="noopener"
-              target="_blank"
-              title="Explore Praveen's Code on GitHub"
-              ><i class="fa fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/in/praveenkh/"
-              rel="noopener"
-              target="_blank"
-              title="View Praveen's Profile on Linkedin"
-            >
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.com/@praveenkh48"
-              rel="noopener"
-              target="_blank"
-              title="Read Praveen's publications on Medium"
-              ><i class="fa fa-medium"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.twitter.com/PRAVEENKH8493"
-              rel="noopener"
-              target="_blank"
-              title="Follow Praveen on Twitter"
-              ><i class="fa fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/praveenkh8493"
-              rel="noopener"
-              target="_blank"
-              title="Follow Praveen on Instagram"
-              ><i class="fa fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/Praveenkh88888888"
-              rel="noopener"
-              target="_blank"
-              title=" Be a friend to Praveen on fb"
-              ><i class="fa fa-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.reddit.com"
-              rel="noopener"
-              target="_blank"
-              title="View Praveen's Posts on Reddit"
-              ><i class="fa fa-reddit"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://stackoverflow.com/users/7809117/praveen-k-h"
-              rel="noopener"
-              target="_blank"
-              title="View Praveen's Stack Overflow Profile"
-              ><i class="fa fa-stack-overflow"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/channel/UCp79npQ3fl7_vQFz3PJHluA/"
-              rel="noopener"
-              target="_blank"
-              title="Subscribe to Praveen's Channel on YouTube"
-              ><i class="fa fa-youtube"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1IXgHvTE3s1ZGoAnznX7D7CN8wBZttfQH/view?usp=sharing"
-              rel="noopener"
-              target="_blank"
-              title="Praveen's Resume"
-              ><i class="fa fa-file-text-o"></i
-            ></a>
-          </li>
-        </ul>
       </div>
 
       <div class="right-container">
